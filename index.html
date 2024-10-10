@@ -1,66 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    .fullscreen {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      z-index: 9999;
-    }
-    .fullscreen img {
-      max-width: 90%;
-      max-height: 90%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI is the future of humanity.</title>
 </head>
 <body>
-  <img src="https://epfabtech915.github.io/epfabtech/SSQ200_2_BLUE.png" alt="Image" onclick="toggleFullScreen(1)">
-  <div id="fullscreen-1" class="fullscreen" onclick="toggleFullScreen(1)">
-    <img src="https://epfabtech915.github.io/epfabtech/SSQ200_2_BLUE.png" alt="Image">
-  </div>
-  
-  <img src="https://epfabtech915.github.io/epfabtech/SSQ675_BLUE.png" alt="Image" onclick="toggleFullScreen(2)">
-  <div id="fullscreen-2" class="fullscreen" onclick="toggleFullScreen(2)">
-    <img src="https://epfabtech915.github.io/epfabtech/SSQ675_BLUE.png" alt="Image">
-  </div>
-  
-  <img src="https://epfabtech915.github.io/epfabtech/SS150_BLUE.png" alt="Image" onclick="toggleFullScreen(3)">
-  <div id="fullscreen-3" class="fullscreen" onclick="toggleFullScreen(3)">
-    <img src="https://epfabtech915.github.io/epfabtech/SS150_BLUE.png" alt="Image">
-  </div>
-  
-  
-  
-  
-  <!-- Add more images and corresponding full-screen containers as needed -->
-  
-  <script>
-    function toggleFullScreen(index) {
-      var fullscreenElement = document.getElementById("fullscreen-" + index);
-
-      if (fullscreenElement.style.display === "none") {
-        enterFullscreen(index);
-      } else {
-        exitFullscreen(index);
-      }
-    }
-
-    function enterFullscreen(index) {
-      document.getElementById("fullscreen-" + index).style.display = "block";
-    }
-
-    function exitFullscreen(index) {
-      document.getElementById("fullscreen-" + index).style.display = "none";
-    }
-  </script>
+    <h1>Image Showcase</h1>
+    <img src="your-image.jpg" alt="A cool image" style="max-width:100%; height:auto;">
 </body>
 </html>
